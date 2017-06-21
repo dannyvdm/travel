@@ -210,7 +210,7 @@
 						<img src="https://www.reizen-en-reistips.nl/wp-content/uploads/2014/08/duitsland-dresden.jpg" />
 					</div>
 					<div class="content-66 text">
-						<h3>Titel blog</h3>
+						<h3>Titel blog nummer 1</h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
 						<a href="#">Lees dit artikel</a>
 					</div>
@@ -220,7 +220,7 @@
 						<img src="https://www.reizen-en-reistips.nl/wp-content/uploads/2014/08/duitsland-dresden.jpg" />
 					</div>
 					<div class="content-66 text">
-						<h3>Titel blog</h3>
+						<h3>Titel blog nummer 2</h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
 						<a href="#">Lees dit artikel</a>
 					</div>
@@ -230,7 +230,7 @@
 						<img src="https://www.reizen-en-reistips.nl/wp-content/uploads/2014/08/duitsland-dresden.jpg" />
 					</div>
 					<div class="content-66 text">
-						<h3>Titel blog</h3>
+						<h3>Titel blog nummer 3</h3>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
 						<a href="#">Lees dit artikel</a>
 					</div>
@@ -273,7 +273,7 @@
 							<img src="https://www.reizen-en-reistips.nl/wp-content/uploads/2014/08/duitsland-dresden-aparthotel-am-schloss.jpg" />
 						</div>
 						<div class="text">
-							<h3>Lorem ipsum</h3>
+							<h3>Hotel Dresden</h3>
 						</div>
 					</li>
 					<li class="content-25">
@@ -281,7 +281,7 @@
 							<img src="https://www.reizen-en-reistips.nl/wp-content/uploads/2014/08/duitsland-dresden-aparthotel-am-schloss.jpg" />
 						</div>
 						<div class="text">
-							<h3>Lorem ipsum</h3>
+							<h3>Hotel & Pension Dresden</h3>
 						</div>
 					</li>
 					<li class="content-25">
