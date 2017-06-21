@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 
+Theme Name: Reistips
+Version: 1.0
+Author: Danny van der Meijden
+Author URI: http://www.dannyvdm.nl
+*/
+
+@import url('scss/reset.css');
+@import url('scss/grid.css');
+@import url('scss/style.css');

@@ -1,0 +1,393 @@
+@charset "utf-8";
+/********************************************************
+COLORS
+********************************************************/
+$white: #FFFFFF;
+$black: #000000;
+$font: #666666;
+$lightgrey: #f1f1f1;
+$grey: #888888;
+$red: #a42418;
+$blue: #0093d7;
+$darkblue: #0093d7;
+$yellow: #ffbf40;
+$green: #b3c904;
+$border: #ccc;
+
+.white {background-color: $white;}
+.black {background-color: $black;}
+.font {background-color: $font;}
+.lightgrey {background-color: $lightgrey;}
+.grey {background-color: $grey;}
+.red {background-color: $red;}
+.blue {background-color: $blue;}
+.darkblue {background-color: $darkblue;}
+.yellow {background-color: $yellow;}
+.green {background-color: $green;}
+.border {background-color: $border;}
+
+/********************************************************
+MIXINS
+********************************************************/
+@mixin rounded-corners($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin boxsizing {
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin transitionall {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@mixin transitionall1 {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+@mixin backgroundimages {
+	-ms-background-clip: border-box; 
+	-o-background-clip: border-box; 
+	-webkit-background-clip: border-box; 
+	-moz-background-clip: border-box; 
+	background-clip: border-box; 
+	background-origin: padding-box; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	-o-background-size: cover; 
+	-ms-background-size: cover; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover; 
+	background-size: cover;
+}
+
+@mixin replaceimage {
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+/********************************************************
+FONTS
+********************************************************/
+@mixin hind300 {font-family: 'Hind', sans-serif; font-weight: 300;}
+@mixin hind400 {font-family: 'Hind', sans-serif; font-weight: 400;}
+@mixin hind500 {font-family: 'Hind', sans-serif; font-weight: 500;}
+@mixin hind600 {font-family: 'Hind', sans-serif; font-weight: 600;}
+@mixin hind700 {font-family: 'Hind', sans-serif; font-weight: 700;}
+@mixin hammersmith {font-family: 'Hammersmith One', sans-serif;}
+@mixin shadows {font-family: 'Shadows Into Light', cursive;}
+
+/********************************************************
+STYLE WEBSITE
+********************************************************/
+body, html {@include hind400; background-color: $white; color: $black; font-size: 15px; line-height: 25px; overflow-x: hidden;}
+ul {margin: 0; padding: 0;}
+h1 {@include hammersmith; font-size: 30px; line-height: 40px; color: $black; position: relative; text-transform: uppercase; margin-bottom: 30px; letter-spacing: 2px;}
+h2 {@include hammersmith; font-size: 22px; line-height: 32px; color: $black; position: relative; text-transform: uppercase; margin-bottom: 30px; letter-spacing: 2px;}
+h3 {@include hammersmith; font-size: 18px; line-height: 25px; color: $black; letter-spacing: 1.5px;}
+h4 {@include hammersmith; font-size: 15px; text-transform: uppercase; color: $red; line-height: 20px; letter-spacing: 1px;}
+h5 {font-size: 15px; font-weight: 700;}
+a img {border: 0;}
+img {line-height: 0;}
+strong {font-weight: bold;}
+em {font-style: italic;}
+
+#mainheader {padding: 15px 0px; 
+	#logo {text-align: center;
+		a {text-decoration: none; color: $black;
+			img {max-height: 40px; width: auto;}
+			h2 {font-size: 14px; margin-bottom: 0px; line-height: 16px;}
+		}
+	}
+}
+
+#slider {height: 700px;
+	.container-big {height: 100%;
+		.slide {width: 100%; height: 100%; @include backgroundimages;
+			.displaytable {
+				.table {text-align: center; color: $white;
+					h2 {@include shadows; text-transform: uppercase; color: $white; font-size: 100px; line-height: 100px; font-weight: 100; display: inline-block; margin-bottom: 0px; text-shadow: 1px 1px 0px $black;}
+				}
+			}
+		}
+	}
+}
+
+#submenu {padding: 30px 0 0;
+	nav {
+		ul {margin: 0; padding: 0; text-align: center; border-bottom: 1px solid $border; padding-bottom: 20px;
+			li {list-style-type: none; display: inline-block; margin: 0 10px;
+				a {@include hammersmith; color: $black; @include transitionall; font-size: 12px; text-transform: uppercase; text-decoration: none;
+					&:hover {color: $red;}
+				}
+			}
+		}
+	}
+}
+
+#content {padding: 60px 0 0 0px;
+	#intro {margin-bottom: 60px;
+		h1 {
+			&:after {content:""; width: 50px; height: 2px; background-color: $black; margin: 0 auto; bottom: 0; display: block; margin-top: 10px;}
+		}
+		 p {@include boxsizing; padding: 0 100px; font-size: 18px; line-height: 30px; @include hind300; font-style: italic;}
+	}
+	#sights {margin-bottom: 60px;
+		/*
+		.sights {margin-left: -15px; margin-right: -15px;
+			.content-33 {
+				.sight-big {@include boxsizing; padding: 15px; position: relative;
+					.image {line-height: 0px;
+						img {max-width: 100%; height: auto;}
+					}
+					.text {color: $white; position: absolute; bottom: 15px; right: 15px; background-color: $white; @include boxsizing; padding: 5px 10px; margin-left: 30px;
+						span {display: none;}
+						h3 {text-transform: uppercase; font-size: 14px; line-height: 20px;}
+					}
+				}
+			}
+			.content-66 {
+				.sight-small {@include boxsizing; padding: 15px; position: relative;
+					.image {line-height: 0px;
+						img {max-width: 100%; height: auto;}
+					}
+					.text {color: $white; position: absolute; bottom: 15px; right: 15px; background-color: $white; @include boxsizing; padding: 5px 10px; margin-left: 30px;
+						span {display: none;}
+						h3 {text-transform: uppercase; font-size: 14px; line-height: 20px;}
+					}
+				}
+			}
+		}
+		*/
+		.sights-2 {
+			.sight-big {width: 33.3333333333333333333333333333333333333333333%; float: left; padding: 15px; position: relative;
+				.image {line-height: 0px;
+					img {max-width: 100%; height: auto;}
+				}
+				.text {color: $white; position: absolute; bottom: 15px; right: 15px; background-color: $white; @include boxsizing; padding: 5px 10px; margin-left: 30px;
+					span {display: none;}
+					h3 {text-transform: uppercase; font-size: 14px; line-height: 20px;}
+				}
+			}
+			.sight-small {width: 16.6666666666666666666666666666666666666666666667%; float: left; padding: 15px; position: relative;
+				.image {line-height: 0px;
+					img {max-width: 100%; height: auto;}
+				}
+				.text {color: $white; position: absolute; bottom: 15px; right: 15px; background-color: $white; @include boxsizing; padding: 5px 10px; margin-left: 30px;
+					span {display: none;}
+					h3 {text-transform: uppercase; font-size: 14px; line-height: 20px;}
+				}
+			}
+		}
+		.entry-footer {text-align: center;
+			a {text-decoration: none; color: $black; @include transitionall; @include hammersmith; text-transform: uppercase; @include boxsizing; padding: 7px 10px; background-color: $white; display: inline-block; border: 1px solid $font; font-size: 12px;
+				i {padding-right: 10px;}
+				&:hover {color: $white; background-color: $black;}
+			}
+		}
+	}
+	#booking {margin-bottom: 60px;
+		.hotels {margin-left: -15px; margin-right: -15px;
+			.content-25 {@include boxsizing; padding: 0 15px; list-style-type: none;
+				.image {
+					img {max-width: 100%; height: auto;}
+				}
+			}
+		}
+	}
+	#booking-search {@include backgroundimages; @include boxsizing; padding: 200px 0; margin-bottom: 60px; text-align: center;}
+	#blogs {margin-bottom: 60px;
+		.blogs {
+			.blog {margin-top: 15px; padding-top: 15px; border-top: 1px solid #f1f1f1;
+				.image {line-height: 0px;
+					img {max-width: 100%; height: auto;}
+				}
+				.text {@include boxsizing; padding: 0 15px;
+					h3 {text-transform: uppercase;}
+					p {margin-bottom: 15px;}
+					a {color: $black; @include hammersmith; text-transform: uppercase; font-size: 12px; @include transitionall; text-decoration: none;
+						&:after {content: "\f178"; font-family: fontawesome; color: $black; padding-left: 5px; @include transitionall;}
+						&:hover {
+							&:after {color: $red; padding-left: 10px;}
+						}
+					}
+				}
+				&:nth-child(1), &:nth-child(2) {margin-top: 0px; padding-top: 0px; border-top: 0;}
+			}
+			.entry-footer {margin-top: 15px;
+				a {text-decoration: none; color: $black; @include transitionall; @include hammersmith; text-transform: uppercase; @include boxsizing; padding: 7px 10px; background-color: $white; display: inline-block; border: 1px solid $font; font-size: 12px;
+					i {padding-right: 10px;}
+					&:hover {color: $white; background-color: $black;}
+				}
+			}
+		}
+		.blog-form {background-color: #f1f1f1; @include boxsizing; padding: 15px;}
+	}
+	#lonelyplanet {margin-bottom: 60px;
+		.container {overflow: visible;
+			.content-100 {overflow: visible;
+				.lp-image {position: relative;
+					img.c {position: absolute; -webkit-transform: rotate(-15deg); transform: rotate(-15deg); left: 30px; top: 0px; max-height: 500px;}
+					img.lp {position: relative; -webkit-transform: rotate(5deg); transform: rotate(5deg);}
+				}
+				.lp-text {@include boxsizing; padding: 0 0 0 30px;
+					ul {
+						li {list-style-type: none;}
+					}
+				}
+			}
+		}
+	}
+	#sightspage {
+		.content-66 {
+			img {max-width: 100%; height: auto; margin-bottom: 20px;}
+			h3 {text-transform: uppercase;}
+		}
+		.sidebar {
+			@include boxsizing; padding: 0 0 0 15px;
+		}
+	}
+}
+
+#mainfooter {color: $white; @include boxsizing; padding: 15px 0; @include hammersmith; text-transform: uppercase; font-size: 11px;
+	.container {
+		.copy {}
+		.footer-menu {
+			a {color: $white; text-decoration: none;}
+		}
+	}
+}
+
+/********************************************************
+MAX WIDTH: 1699px
+********************************************************/
+@media only screen and (max-width: 1699px) {
+	#slider {height: 600px;}
+
+	.container-big {max-width: 100%; @include boxsizing; padding: 0 15px;}
+}
+
+/********************************************************
+MAX WIDTH: 1280px
+********************************************************/
+@media only screen and (max-width: 1280px) {
+	#slider {height: 500px;}
+
+	.container {max-width: 100%; @include boxsizing; padding: 0 15px;}
+}
+
+/********************************************************
+MAX WIDTH: 1024px
+********************************************************/
+@media only screen and (max-width: 1024px) {
+	#slider {height: 400px;
+		.container-big {
+			.slide {
+				.displaytable {
+					.table {
+						h2 {font-size: 75px; line-height: 75px;}
+					}
+				}
+			}
+		}
+	}
+
+	#content {
+		#intro {
+			 p {padding: 0;}
+		}
+		#sights {
+			.sights-2 {
+				.sight-big {width: 50%;}
+				.sight-small {width: 25%;
+					&:nth-child(6) {clear: left;}
+				}
+			}
+		}
+		#booking {
+			.hotels {
+				.content-25 {width: 50%;}
+			}
+		}
+	}
+}
+
+/********************************************************
+MAX WIDTH: 767px
+********************************************************/
+@media only screen and (max-width: 600px) {
+	#mainheader {
+		#logo {
+			a {
+				img {max-width: 200px; height: auto;}
+			}
+		}
+	}
+
+	#slider {height: 200px;
+		.container-big {
+			.slide {
+				.displaytable {
+					.table {
+						h2 {font-size: 50px; line-height: 50px;}
+					}
+				}
+			}
+		}
+	}
+
+	#content {
+		#intro {
+			 p {padding: 0;}
+		}
+		#sights {
+			.sights-2 {
+				.sight-big {width: 100%;
+					.text {
+						h3 {font-size: 11px; line-height: 16px;}
+					}
+				}
+				.sight-small {width: 50%;
+					.text {
+						h3 {font-size: 11px; line-height: 16px;}
+					}
+				}
+			}
+		}
+		#blogs {
+			.blogs {width: 100%; float: none;
+				.blog {
+					.image {width: 100%; margin-bottom: 15px;}
+					.text {width: 100%; padding: 0px;}
+				}
+			}
+			.blog-form {width: 100%; margin-top: 60px; float: none;}
+		}
+		#booking {
+			.hotels {
+				.content-25 {width: 100%;}
+			}
+		}
+		#booking-search {@include backgroundimages; @include boxsizing; padding: 60px 0; text-align: center;
+			.content-33 {width: 100%; margin-bottom: 10px;}
+		}
+	}
+}

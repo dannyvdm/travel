@@ -1,0 +1,619 @@
+/********************************************************
+COLORS
+********************************************************/
+.white {
+  background-color: #FFFFFF; }
+
+.black {
+  background-color: #000000; }
+
+.font {
+  background-color: #666666; }
+
+.lightgrey {
+  background-color: #f1f1f1; }
+
+.grey {
+  background-color: #888888; }
+
+.red {
+  background-color: #a42418; }
+
+.blue {
+  background-color: #0093d7; }
+
+.darkblue {
+  background-color: #0093d7; }
+
+.yellow {
+  background-color: #ffbf40; }
+
+.green {
+  background-color: #b3c904; }
+
+.border {
+  background-color: #ccc; }
+
+/********************************************************
+MIXINS
+********************************************************/
+/********************************************************
+FONTS
+********************************************************/
+/********************************************************
+STYLE WEBSITE
+********************************************************/
+body, html {
+  font-family: 'Hind', sans-serif;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 15px;
+  line-height: 25px;
+  overflow-x: hidden; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px; }
+
+h2 {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000000;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px; }
+
+h3 {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  letter-spacing: 1.5px; }
+
+h4 {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #a42418;
+  line-height: 20px;
+  letter-spacing: 1px; }
+
+h5 {
+  font-size: 15px;
+  font-weight: 700; }
+
+a img {
+  border: 0; }
+
+img {
+  line-height: 0; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+#mainheader {
+  padding: 15px 0px; }
+  #mainheader #logo {
+    text-align: center; }
+    #mainheader #logo a {
+      text-decoration: none;
+      color: #000000; }
+      #mainheader #logo a img {
+        max-height: 40px;
+        width: auto; }
+      #mainheader #logo a h2 {
+        font-size: 14px;
+        margin-bottom: 0px;
+        line-height: 16px; }
+
+#slider {
+  height: 700px; }
+  #slider .container-big {
+    height: 100%; }
+    #slider .container-big .slide {
+      width: 100%;
+      height: 100%;
+      -ms-background-clip: border-box;
+      -o-background-clip: border-box;
+      -webkit-background-clip: border-box;
+      -moz-background-clip: border-box;
+      background-clip: border-box;
+      background-origin: padding-box;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -o-background-size: cover;
+      -ms-background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover; }
+      #slider .container-big .slide .displaytable .table {
+        text-align: center;
+        color: #FFFFFF; }
+        #slider .container-big .slide .displaytable .table h2 {
+          font-family: 'Shadows Into Light', cursive;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          font-size: 100px;
+          line-height: 100px;
+          font-weight: 100;
+          display: inline-block;
+          margin-bottom: 0px;
+          text-shadow: 1px 1px 0px #000000; }
+
+#submenu {
+  padding: 30px 0 0; }
+  #submenu nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px; }
+    #submenu nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 10px; }
+      #submenu nav ul li a {
+        font-family: 'Hammersmith One', sans-serif;
+        color: #000000;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none; }
+        #submenu nav ul li a:hover {
+          color: #a42418; }
+
+#content {
+  padding: 60px 0 0 0px; }
+  #content #intro {
+    margin-bottom: 60px; }
+    #content #intro h1:after {
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: #000000;
+      margin: 0 auto;
+      bottom: 0;
+      display: block;
+      margin-top: 10px; }
+    #content #intro p {
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0 100px;
+      font-size: 18px;
+      line-height: 30px;
+      font-family: 'Hind', sans-serif;
+      font-weight: 300;
+      font-style: italic; }
+  #content #sights {
+    margin-bottom: 60px;
+    /*
+    .sights {margin-left: -15px; margin-right: -15px;
+    	.content-33 {
+    		.sight-big {@include boxsizing; padding: 15px; position: relative;
+    			.image {line-height: 0px;
+    				img {max-width: 100%; height: auto;}
+    			}
+    			.text {color: $white; position: absolute; bottom: 15px; right: 15px; background-color: $white; @include boxsizing; padding: 5px 10px; margin-left: 30px;
+    				span {display: none;}
+    				h3 {text-transform: uppercase; font-size: 14px; line-height: 20px;}
+    			}
+    		}
+    	}
+    	.content-66 {
+    		.sight-small {@include boxsizing; padding: 15px; position: relative;
+    			.image {line-height: 0px;
+    				img {max-width: 100%; height: auto;}
+    			}
+    			.text {color: $white; position: absolute; bottom: 15px; right: 15px; background-color: $white; @include boxsizing; padding: 5px 10px; margin-left: 30px;
+    				span {display: none;}
+    				h3 {text-transform: uppercase; font-size: 14px; line-height: 20px;}
+    			}
+    		}
+    	}
+    }
+    */ }
+    #content #sights .sights-2 .sight-big {
+      width: 33.3333333333333333333333333333333333333333333%;
+      float: left;
+      padding: 15px;
+      position: relative; }
+      #content #sights .sights-2 .sight-big .image {
+        line-height: 0px; }
+        #content #sights .sights-2 .sight-big .image img {
+          max-width: 100%;
+          height: auto; }
+      #content #sights .sights-2 .sight-big .text {
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background-color: #FFFFFF;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        margin-left: 30px; }
+        #content #sights .sights-2 .sight-big .text span {
+          display: none; }
+        #content #sights .sights-2 .sight-big .text h3 {
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 20px; }
+    #content #sights .sights-2 .sight-small {
+      width: 16.6666666666666666666666666666666666666666666667%;
+      float: left;
+      padding: 15px;
+      position: relative; }
+      #content #sights .sights-2 .sight-small .image {
+        line-height: 0px; }
+        #content #sights .sights-2 .sight-small .image img {
+          max-width: 100%;
+          height: auto; }
+      #content #sights .sights-2 .sight-small .text {
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background-color: #FFFFFF;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        margin-left: 30px; }
+        #content #sights .sights-2 .sight-small .text span {
+          display: none; }
+        #content #sights .sights-2 .sight-small .text h3 {
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 20px; }
+    #content #sights .entry-footer {
+      text-align: center; }
+      #content #sights .entry-footer a {
+        text-decoration: none;
+        color: #000000;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-family: 'Hammersmith One', sans-serif;
+        text-transform: uppercase;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 7px 10px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        border: 1px solid #666666;
+        font-size: 12px; }
+        #content #sights .entry-footer a i {
+          padding-right: 10px; }
+        #content #sights .entry-footer a:hover {
+          color: #FFFFFF;
+          background-color: #000000; }
+  #content #booking {
+    margin-bottom: 60px; }
+    #content #booking .hotels {
+      margin-left: -15px;
+      margin-right: -15px; }
+      #content #booking .hotels .content-25 {
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 15px;
+        list-style-type: none; }
+        #content #booking .hotels .content-25 .image img {
+          max-width: 100%;
+          height: auto; }
+  #content #booking-search {
+    -ms-background-clip: border-box;
+    -o-background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 200px 0;
+    margin-bottom: 60px;
+    text-align: center; }
+  #content #blogs {
+    margin-bottom: 60px; }
+    #content #blogs .blogs .blog {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #f1f1f1; }
+      #content #blogs .blogs .blog .image {
+        line-height: 0px; }
+        #content #blogs .blogs .blog .image img {
+          max-width: 100%;
+          height: auto; }
+      #content #blogs .blogs .blog .text {
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 15px; }
+        #content #blogs .blogs .blog .text h3 {
+          text-transform: uppercase; }
+        #content #blogs .blogs .blog .text p {
+          margin-bottom: 15px; }
+        #content #blogs .blogs .blog .text a {
+          color: #000000;
+          font-family: 'Hammersmith One', sans-serif;
+          text-transform: uppercase;
+          font-size: 12px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          text-decoration: none; }
+          #content #blogs .blogs .blog .text a:after {
+            content: "\f178";
+            font-family: fontawesome;
+            color: #000000;
+            padding-left: 5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+          #content #blogs .blogs .blog .text a:hover:after {
+            color: #a42418;
+            padding-left: 10px; }
+      #content #blogs .blogs .blog:nth-child(1), #content #blogs .blogs .blog:nth-child(2) {
+        margin-top: 0px;
+        padding-top: 0px;
+        border-top: 0; }
+    #content #blogs .blogs .entry-footer {
+      margin-top: 15px; }
+      #content #blogs .blogs .entry-footer a {
+        text-decoration: none;
+        color: #000000;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        font-family: 'Hammersmith One', sans-serif;
+        text-transform: uppercase;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 7px 10px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        border: 1px solid #666666;
+        font-size: 12px; }
+        #content #blogs .blogs .entry-footer a i {
+          padding-right: 10px; }
+        #content #blogs .blogs .entry-footer a:hover {
+          color: #FFFFFF;
+          background-color: #000000; }
+    #content #blogs .blog-form {
+      background-color: #f1f1f1;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 15px; }
+  #content #lonelyplanet {
+    margin-bottom: 60px; }
+    #content #lonelyplanet .container {
+      overflow: visible; }
+      #content #lonelyplanet .container .content-100 {
+        overflow: visible; }
+        #content #lonelyplanet .container .content-100 .lp-image {
+          position: relative; }
+          #content #lonelyplanet .container .content-100 .lp-image img.c {
+            position: absolute;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+            left: 30px;
+            top: 0px;
+            max-height: 500px; }
+          #content #lonelyplanet .container .content-100 .lp-image img.lp {
+            position: relative;
+            -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+        #content #lonelyplanet .container .content-100 .lp-text {
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 0 0 0 30px; }
+          #content #lonelyplanet .container .content-100 .lp-text ul li {
+            list-style-type: none; }
+  #content #sightspage .content-66 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; }
+  #content #sightspage .content-66 h3 {
+    text-transform: uppercase; }
+  #content #sightspage .sidebar {
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0 15px; }
+
+#mainfooter {
+  color: #FFFFFF;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 0;
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px; }
+  #mainfooter .container .footer-menu a {
+    color: #FFFFFF;
+    text-decoration: none; }
+
+/********************************************************
+MAX WIDTH: 1699px
+********************************************************/
+@media only screen and (max-width: 1699px) {
+  #slider {
+    height: 600px; }
+
+  .container-big {
+    max-width: 100%;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 15px; } }
+/********************************************************
+MAX WIDTH: 1280px
+********************************************************/
+@media only screen and (max-width: 1280px) {
+  #slider {
+    height: 500px; }
+
+  .container {
+    max-width: 100%;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 15px; } }
+/********************************************************
+MAX WIDTH: 1024px
+********************************************************/
+@media only screen and (max-width: 1024px) {
+  #slider {
+    height: 400px; }
+    #slider .container-big .slide .displaytable .table h2 {
+      font-size: 75px;
+      line-height: 75px; }
+
+  #content #intro p {
+    padding: 0; }
+  #content #sights .sights-2 .sight-big {
+    width: 50%; }
+  #content #sights .sights-2 .sight-small {
+    width: 25%; }
+    #content #sights .sights-2 .sight-small:nth-child(6) {
+      clear: left; }
+  #content #booking .hotels .content-25 {
+    width: 50%; } }
+/********************************************************
+MAX WIDTH: 767px
+********************************************************/
+@media only screen and (max-width: 600px) {
+  #mainheader #logo a img {
+    max-width: 200px;
+    height: auto; }
+
+  #slider {
+    height: 200px; }
+    #slider .container-big .slide .displaytable .table h2 {
+      font-size: 50px;
+      line-height: 50px; }
+
+  #content #intro p {
+    padding: 0; }
+  #content #sights .sights-2 .sight-big {
+    width: 100%; }
+    #content #sights .sights-2 .sight-big .text h3 {
+      font-size: 11px;
+      line-height: 16px; }
+  #content #sights .sights-2 .sight-small {
+    width: 50%; }
+    #content #sights .sights-2 .sight-small .text h3 {
+      font-size: 11px;
+      line-height: 16px; }
+  #content #blogs .blogs {
+    width: 100%;
+    float: none; }
+    #content #blogs .blogs .blog .image {
+      width: 100%;
+      margin-bottom: 15px; }
+    #content #blogs .blogs .blog .text {
+      width: 100%;
+      padding: 0px; }
+  #content #blogs .blog-form {
+    width: 100%;
+    margin-top: 60px;
+    float: none; }
+  #content #booking .hotels .content-25 {
+    width: 100%; }
+  #content #booking-search {
+    -ms-background-clip: border-box;
+    -o-background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 0;
+    text-align: center; }
+    #content #booking-search .content-33 {
+      width: 100%;
+      margin-bottom: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
